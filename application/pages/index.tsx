@@ -3,11 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'antd/dist/antd.css'
-import Header from "../layout/Header";
+import HeaderLayout from "../layout/HeaderLayout";
 
-const Home: NextPage = ( ) => {
+const Home: NextPage = () => {
   return (
-      <Header>
+      <HeaderLayout>
         <div className={styles.container}>
           <Head>
             <title>Create Next App</title>
@@ -69,7 +69,7 @@ const Home: NextPage = ( ) => {
             </a>
           </footer>
         </div>
-      </Header>
+      </HeaderLayout>
   )
 }
 
